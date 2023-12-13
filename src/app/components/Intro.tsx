@@ -8,7 +8,7 @@ export const Intro = () => {
         <Image
           isBlurred
           alt="Chris O&apos;Brien - fullstack developer"
-          src="chrisobrien.jpg"
+          src="chrisobrienImage.jpg"
           radius= {'full'}
         />
       </div>
