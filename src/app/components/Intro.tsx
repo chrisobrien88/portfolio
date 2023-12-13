@@ -7,13 +7,13 @@ export const Intro = () => {
       <div className="col-span-1 w-48 md:w-full grid mx-auto">
         <Image
           isBlurred
-          alt="Chris OBrien - fullstack developer"
+          alt="Chris O&apos;Brien - fullstack developer"
           src="chrisobrien.jpg"
           radius= {'full'}
         />
       </div>
       <div className="md:col-span-2 flex flex-col px-4">
-        <h4 className="text-3xl font-semibold">Chris OBrien </h4>
+        <h4 className="text-3xl font-semibold">Chris O&apos;Brien </h4>
         <h3 className="text-5xl font-bold">
           I am{' '}
           <TypingEffect
