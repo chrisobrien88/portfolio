@@ -7,7 +7,7 @@ export const Intro = () => {
       <div className="col-span-1 w-48 md:w-full grid mx-auto">
         <Image
           isBlurred
-          alt="Chris O&apos;Brien - fullstack developer"
+          alt="Christopher O&apos;Brien - fullstack developer"
           src="chrisobrienImage.jpg"
           radius= {'full'}
         />
