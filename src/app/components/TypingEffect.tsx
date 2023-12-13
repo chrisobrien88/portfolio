@@ -40,9 +40,9 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
   const [wordIndex, setWordIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [color, setColor] = useState(colorList[0])
+  const [typeSpeed, setTypeSpeed] = useState(speed)
   
   useEffect(() => {
-    const [typeSpeed, setTypeSpeed] = useState(speed)
     const currentWord = words[wordIndex]
 
     const type = () => {

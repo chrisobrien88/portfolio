@@ -15,7 +15,7 @@ export const MyHeader = () => {
     <Navbar maxWidth={`2xl`} className='bg-inherit'>
       <NavbarBrand>
         <MyLogo />
-        <p className="font-bold text-gray ml-2">Chris OBrien</p>
+        <p className="font-bold text-gray-600 ml-2">Chris O&apos;Brien</p>
       </NavbarBrand>
       <NavbarContent
         className="hidden sm:flex gap-4"
@@ -23,13 +23,13 @@ export const MyHeader = () => {
       ></NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="flex">
-          <Link isBlock href="https://www.linkedin.com/in/chris-o-brien-314791212/" target="_blank" className='text-gray-500'>
+          <Link isBlock href="https://www.linkedin.com/in/chris-o-brien-314791212/" target="_blank" className='text-gray-600 underline'>
             <LinkedinIcon fill="gray" className="mr-2" />
             Linkedin
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Link isBlock href="https://github.com/chrisobrien88" target="_blank" className='text-gray-500'>
+          <Link isBlock href="https://github.com/chrisobrien88" target="_blank" className='text-gray-600 underline'>
             <GithubIcon fill="gray" className="mr-2" />
             Github
           </Link>
