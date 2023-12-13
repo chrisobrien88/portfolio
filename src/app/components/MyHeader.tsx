@@ -15,7 +15,7 @@ export const MyHeader = () => {
     <Navbar maxWidth={`2xl`} className='bg-inherit'>
       <NavbarBrand>
         <MyLogo />
-        <p className="font-bold text-gray-600 ml-2">Chris O&apos;Brien</p>
+        <p className="font-bold text-gray-600 ml-2">Christopher O&apos;Brien</p>
       </NavbarBrand>
       <NavbarContent
         className="hidden sm:flex gap-4"
