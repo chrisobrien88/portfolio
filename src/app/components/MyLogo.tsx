@@ -5,7 +5,7 @@ const MyLogo = () => {
   return (
     <Image
       isBlurred
-      alt="Chris O'Brien - fullstack developer"
+      alt="Chris OBrien - fullstack developer"
       width={50}
       height={"auto"}
       src="chrisobrienlogo.png"
