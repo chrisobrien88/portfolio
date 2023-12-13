@@ -39,10 +39,10 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
   const [text, setText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const [typeSpeed, setTypeSpeed] = useState(speed)
   const [color, setColor] = useState(colorList[0])
-
+  
   useEffect(() => {
+    const [typeSpeed, setTypeSpeed] = useState(speed)
     const currentWord = words[wordIndex]
 
     const type = () => {
@@ -70,7 +70,7 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
 
     const timer = setTimeout(type, typeSpeed)
     return () => clearTimeout(timer)
-  }, [text, isDeleting, wordIndex])
+  }, [text, isDeleting, wordIndex, speed, words])
 
   // return <span className={getColorClass(color)}>{text}</span>
   return (
