@@ -6,7 +6,6 @@ interface Props {
 }
 
 const colorList = [
-  'orange',
   'amber',
   'green',
   'teal',
@@ -28,11 +27,13 @@ const aOrAn = (word: string) => {
   }
 }
 
-const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
+
+const TypingEffect: React.FC<Props> = ({ words, speed = 1000 }) => {
+  const randomNumber = Math.floor(Math.random() * colorList.length)
   const [text, setText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const [color, setColor] = useState(colorList[0])
+  const [color, setColor] = useState(colorList[randomNumber])
   const [typeSpeed, setTypeSpeed] = useState(speed)
   
   useEffect(() => {
@@ -46,16 +47,17 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
       }
 
       if (!isDeleting && text === currentWord) {
-        setTypeSpeed(1200) 
+        setTypeSpeed(1000) 
         setIsDeleting(true)
       } else if (isDeleting && text === '') {
         setIsDeleting(false)
         setTypeSpeed(speed)
         setWordIndex((prevWordIndex) => {
-          const newIndex = (prevWordIndex + 1) % words.length
-          setColor(colorList[newIndex]) 
-          return newIndex
-        })
+          const newIndex = (prevWordIndex + 1) % words.length;
+          const newColor = colorList[newIndex];
+          setColor(newColor);
+          return newIndex;
+        });
       } else {
         setTypeSpeed(speed)
       }
@@ -63,9 +65,8 @@ const TypingEffect: React.FC<Props> = ({ words, speed = 100 }) => {
 
     const timer = setTimeout(type, typeSpeed)
     return () => clearTimeout(timer)
-  }, [text, isDeleting, wordIndex, speed, words])
+  }, [text, isDeleting, wordIndex])
 
-  // return <span className={getColorClass(color)}>{text}</span>
   return (
     <>
       <span>{aOrAn(text)} </span>

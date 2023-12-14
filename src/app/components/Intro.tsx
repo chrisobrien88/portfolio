@@ -13,25 +13,27 @@ export const Intro = () => {
         />
       </div>
       <div className="md:col-span-2 flex flex-col px-4">
-        <h4 className="text-3xl font-semibold">Chris O&apos;Brien </h4>
+        <h4 className="text-3xl font-semibold">Hello! I&apos;m Chris O&apos;Brien </h4>
         <h3 className="text-5xl font-bold">
           I am{' '}
           <TypingEffect
             words={[
-              'Full Stack Developer',
-              'Teacher',
-              'Golfer',
-              'Scrum Master',
-              'Swimmer',
-              'Project Manager',
+              'developer',
+              'scrum master',
+              'collaborator',
+              'teacher',
+              'innovator',
+              'problem solver',
+              'swimmer',
+              'golf nerd',
             ]}
-            speed={50}
+            speed={150}
           />
         </h3>
         <p className="mt-4">
           Full stack JavaScript/TypeScript developer. I have over a decade of experience in problem-solving, 
           analytical-thinking, communication and leadership which I combine with my passion for coding, 
-          project management and scrum mastering to turn static designs into user-focused dynamic applications.
+          and scrum mastering to turn static designs into user-focused dynamic applications.
         </p>
       </div>
     </div>
