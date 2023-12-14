@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -14,16 +14,16 @@ import {
   ModalContent,
   ModalHeader,
   useDisclosure,
-} from '@nextui-org/react'
-import { ProjectInfo } from '../types/types'
-import TechStacks from './TechStacks'
+} from "@nextui-org/react";
+import { ProjectInfo } from "../types/types";
+import TechStacks from "./TechStacks";
 
 interface PortfolioCardBigProp {
-  projectInfo: ProjectInfo
+  projectInfo: ProjectInfo;
 }
 
 const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure()
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div>
@@ -42,14 +42,16 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           </Button>
         </CardHeader>
         <CardBody className="flex gap-2">
-          <div className="w-full h-[180px] flex items-center overflow-hidden rounded-xl">
-            <Image
-              // isZoomed
-              alt="Project preview gif"
-              className="object-cover rounded-xl"
-              src={`${projectInfo.projectImageLink}`}
-              width={370}
-            />
+          <div className="w-full h-[180px] flex items-center justify-center overflow-hidden rounded-xl">
+            <Link href={projectInfo.projectUrl} target="_blank">
+              <Image
+                isZoomed
+                alt="Project preview gif"
+                className="object-cover rounded-xl"
+                src={`${projectInfo.projectImageLink}`}
+                width={270}
+              />
+            </Link>
           </div>
           <div className="max-w-[370px]">
             <TechStacks projectInfo={projectInfo} />
@@ -106,7 +108,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
         </CardFooter>
       </Card>
 
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={'4xl'}>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={"4xl"}>
         <ModalContent>
           {(onClose) => (
             <div>
@@ -147,7 +149,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
         </ModalContent>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
-export { PortfolioCard }
+export { PortfolioCard };
