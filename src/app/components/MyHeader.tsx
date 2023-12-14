@@ -6,8 +6,10 @@ import {
   NavbarItem,
   Link,
 } from '@nextui-org/react'
-import GithubIcon from '../icons/GithubIcon'
-import LinkedinIcon from '../icons/LinkedinIcon'
+import GithubIcon from '@/app/icons/GithubIcon'
+import LinkedinIcon from '@/app/icons/LinkedinIcon'
+import MyCvIcon from '@/app/icons/MyCvIcon'
+
 import MyLogo from './MyLogo'
 
 export const MyHeader = () => {
@@ -23,6 +25,12 @@ export const MyHeader = () => {
       ></NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="flex">
+          <Link isBlock href="chris-obrien-cv.pdf" target="_blank" className='text-gray-600 underline'>
+            <MyCvIcon fill="gray" margin="mr-2"/>
+            Resume
+          </Link>
+          </NavbarItem>
+          <NavbarItem className="flex">
           <Link isBlock href="https://www.linkedin.com/in/chris-o-brien-314791212/" target="_blank" className='text-gray-600 underline'>
             <LinkedinIcon fill="gray" className="mr-2" />
             Linkedin

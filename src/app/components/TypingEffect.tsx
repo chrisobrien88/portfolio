@@ -19,13 +19,6 @@ const colorList = [
   'rose',
 ]
 
-const getColorClass = (color: string) => {
-  if (colorList.includes(color)) {
-    return `text-${color}-500`
-  }
-  return 'text-black'
-}
-
 const aOrAn = (word: string) => {
   const aList = ['a', 'e', 'i', 'o', 'u']
   if (aList.includes(word.toLowerCase()[0])) {

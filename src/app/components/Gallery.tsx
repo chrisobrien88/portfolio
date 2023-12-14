@@ -8,8 +8,7 @@ export const Gallery = () => {
   return (
     <div className="flex flex-col px-8 py-16 items-center">
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl py-4">Personal Projects</h1>
-        <p className="text-md pb-8">Selected personal projects</p>
+        <h1 className="text-3xl py-4">Selected Projects</h1>
       </div>
       <div className="gap-10 grid grid-cols-1 sm:grid-cols-3 justify-around">
         {projectsInfos.map((projectInfo, index) => (
