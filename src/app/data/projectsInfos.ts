@@ -35,7 +35,20 @@ export const projectsInfos: ProjectInfo[] = [
       'MUI',
       'GoogleMapsAPI'
     ],
-    featuredTechStacks: ['TypeScript'],
+    featuredTechStacks: ['GoogleMapsAPI'],
+  },
+  {
+    projectTitle: 'JoinTheQ',
+    projectDescription:
+      'A 2 week team project. We designed and developed an app that users could use to join a virtual queue for a restaurant or other business. The main page shows resturants in your area with details about how many people are in the queue, the estimated waiting time and distance from your current location.',
+    projectImageLink:
+      'jointheqmockup.png',
+    projectUrl: 'https://join-the-queue-client.onrender.com/',
+    projectGithubUrl: 'https://github.com/chrisobrien88/Join-The-Queue',
+    projectTechStacks: [
+      'MongoDb', 'Express', 'React', 'Google Map Api', 'Redux', 'Auth0'
+    ],
+    featuredTechStacks: [],
   },
  
 ]
