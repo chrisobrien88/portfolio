@@ -45,7 +45,7 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
           <div className="w-full h-[180px] flex items-center justify-center overflow-hidden rounded-xl">
             <Link href={projectInfo.projectUrl} target="_blank">
               <Image
-                isZoomed
+                // isZoomed
                 alt="Project preview gif"
                 className="object-cover rounded-xl"
                 src={`${projectInfo.projectImageLink}`}
@@ -57,8 +57,8 @@ const PortfolioCard = ({ projectInfo }: PortfolioCardBigProp) => {
             <TechStacks projectInfo={projectInfo} />
           </div>
           <div className="text-tiny">
-            <ScrollShadow hideScrollBar className="max-w-[300px] h-[100px]">
-              {projectInfo.projectDescription}
+            <ScrollShadow hideScrollBar className="max-w-[300px] h-[50px]">
+              {projectInfo.projectBriefDescription}
             </ScrollShadow>
           </div>
         </CardBody>

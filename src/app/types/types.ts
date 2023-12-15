@@ -12,6 +12,7 @@
 
 export type ProjectInfo = {
     projectTitle: string
+    projectBriefDescription: string
     projectDescription: string
     projectSubDescription?: string
     projectImageLink: string

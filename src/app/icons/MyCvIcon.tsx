@@ -1,9 +1,9 @@
 import React from "react";
 
-const MyCvIcon = ({fill, margin}: {fill: string, margin: string}) => {
+const MyCvIcon = ({fill, className}: {fill: string, className: string}) => {
   return (
     <svg
-    className={margin}
+    className={className}
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       width="24"
