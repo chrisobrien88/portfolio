@@ -13,7 +13,7 @@ export const Intro = () => {
         />
       </div>
       <div className="md:col-span-2 flex flex-col px-4">
-        <h4 className="text-3xl font-semibold">Hello! I&apos;m Chris O&apos;Brien </h4>
+        <h4 className="text-3xl font-semibold">I&apos;m Chris O&apos;Brien </h4>
         <h3 className="text-5xl font-bold">
           I am{' '}
           <TypingEffect
