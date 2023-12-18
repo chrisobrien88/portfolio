@@ -31,9 +31,9 @@ export const Intro = () => {
           />
         </h3>
         <p className="mt-4">
-          Full stack JavaScript/TypeScript developer. I have over a decade of experience in problem-solving, 
+          Full stack TypeScript developer. I have over a decade of experience in problem-solving, 
           analytical-thinking, communication and leadership which I combine with my passion for coding, 
-          and scrum mastering to turn static designs into user-focused dynamic applications.
+          and scrum-mastering to turn static designs into user-focused dynamic applications.
         </p>
       </div>
     </div>
