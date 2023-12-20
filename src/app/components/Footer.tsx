@@ -8,7 +8,7 @@ export const Footer = () => {
         <Link
           
           
-          href="chris-obrien-cv.pdf"
+          href="mailto: chrisobrien88@gmail.com"
           target="_blank"
           className="text-gray-600"
         >
